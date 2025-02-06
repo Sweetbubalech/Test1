@@ -228,7 +228,7 @@ b {
 @media screen and (max-width: 720px) {
   .main_section {
     flex-direction: column;
-    height: 120vh;
+    height: 140vh;
   }
 
   .main_left_section {
@@ -358,7 +358,7 @@ b {
     display: flex;
     flex-direction: column;
     width: 90%;
-    height: 120vh;
+    height: 160vh;
   }
 
   .article_block {
@@ -394,46 +394,36 @@ b {
   display: flex;
   margin-top: 5rem;
   width: 75%;
-  height: 40vh;
+  height: 45vh;
   background-color: #ffffff;
   border-radius: 2rem;
 }
 
 .left_form_section {
-  position: relative;
-  z-index: 50;
   display: flex;
-  align-items: flex-end;
-  justify-content: space-between;
-  width: 100%;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  width: 60%;
+  height: 100%;
+}
+
+.right_form_section{
+  width: 40%;
   height: 100%;
   background-image: url(/img/1.png);
-  background-position: center right;
   background-repeat: no-repeat;
   background-size: cover;
   border-top-right-radius: 2rem;
   border-bottom-right-radius: 2rem;
-  background-size: 33%;
 }
 
-.right_form_section {
-  position: static;
-  z-index: 998;
-  width: 60%;
-  height: 105%;
-  background-image: url(/img/woman.png);
-  background-position-x: 5rem;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
 
 .form {
-  position: relative;
-  z-index: 2;
-  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   width: 80%;
-  padding-left: 2rem;
-  padding-bottom: 2rem;
 }
 
 .legend_title {
@@ -443,6 +433,7 @@ b {
 
 fieldset {
   border: none;
+  padding: 0;
 }
 
 ::placeholder {
@@ -484,26 +475,21 @@ input[type="name"]:focus {
   transform: scale(1.05);
 }
 
-@media screen and (max-width: 1250px) {
-  .left_form_section {
-    background-image: none;
-  }
 
-  .right_form_section {
-    position: static;
-    z-index: 998;
-    width: 70%;
-    background-position-x: -0.2rem;
-  }
-}
-
-@media screen and (max-width: 950px) {
-  .right_form_section {
-    display: none;
+@media screen and (max-width: 720px) {
+  .form_section {
+    height: 60vh;
   }
   .form {
     width: 100%;
-    padding: 2rem;
+    height: 100%;
+  }
+
+  .left_form_section{
+    width: 100%;
+  }
+  .right_form_section{
+    display: none;
   }
 }
 
@@ -524,11 +510,11 @@ input[type="name"]:focus {
 footer {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   margin-top: 5rem;
   width: 100%;
-  height: 30vh;
+  height: 35vh;
 }
 
 .footer_nav_block {
@@ -544,7 +530,7 @@ footer {
   display: grid;
   grid-template-columns: 33.3% 33.3% 33.3%;
   grid-row-gap: 1rem;
-  padding: 2rem;
+  padding: 1rem;
   width: 80%;
   height: 70%;
   color: white;
